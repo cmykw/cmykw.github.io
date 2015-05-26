@@ -1,0 +1,313 @@
+
+
+body {
+	background-color: transparent;
+	height: 100%;
+	font-size: 62.5%;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;	
+}
+
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono|Yeseva+One|Montserrat:400,700);
+
+
+/* ==========================================================================
+   Bg-img
+   ========================================================================== */
+
+.cover {
+	background-size: cover;
+	background-image: url(http://i.imgur.com/FNZqXPN.png);
+	height: 100vh;
+}
+
+
+/* ==========================================================================
+   Menu-Overlay
+   ========================================================================== */
+
+#menu {
+  background: rgba(37,38,41,.98);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 100%;
+  padding-top: 80px;
+  z-index: 808;
+}
+
+.nav {
+	padding-top: 30px;
+}
+
+.panel, .panel-default {
+	background-color: none;
+	border: none;
+	border-color: none;
+	border-radius: none;
+	box-shadow: none; 	
+}
+
+.nav-pills>li>a {
+	border-radius: 0;
+	font-family: 'Yeseva One', serif;
+	font-size: 3.2rem;
+	color: #fff;
+	text-transform: uppercase;	
+}
+
+.nav-pills>li>a:hover {
+	background-color: transparent;	
+}
+
+.nav-pills>li>a:after {
+    position: absolute;
+    bottom: 47%;
+    -webkit-transition: -50% 0 cubic-bezier(1, 0, 0, 1);
+    -moz-transition: -50% 0 cubic-bezier(1, 0, 0, 1);
+    -ms-transition: -50% 0 cubic-bezier(1, 0, 0, 1);
+    -o-transition: -50% 0 cubic-bezier(1, 0, 0, 1);
+    transition: -50% 0 cubic-bezier(1, 0, 0, 1);
+    left: 0;
+    background: #FF475E;
+    height: 5px;
+    width: 0rem;
+    content: "";
+    display: block;
+    -webkit-transition: all 400ms cubic-bezier(1, 0, 0, 1);
+    -moz-transition: all 400ms cubic-bezier(1, 0, 0, 1);
+    -ms-transition: all 400ms cubic-bezier(1, 0, 0, 1);
+    -o-transition: all 400ms cubic-bezier(1, 0, 0, 1);
+    transition: all 400ms cubic-bezier(1, 0, 0, 1)	
+}
+
+.nav-pills>li>a:hover:after {
+    width: 15rem;
+}
+
+.section {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+	color: #B4B4B5;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	font-weight: 700;
+	padding-left: 1.5rem;	
+}
+
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+
+.navbar-default .navbar-brand {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+	background-image: none;
+	box-shadow: none;
+	background-color: transparent;
+}
+
+.navbar-default {
+	background-image: none;
+	box-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #fff;
+}
+
+.btn-primary, .btn-primary:hover {
+	background-image: none;
+	border-color: transparent;
+	text-shadow: none;
+	box-shadow: none;
+	background-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;	
+}
+
+.rotator {
+	margin: 0 auto;
+}
+
+/* ==========================================================================
+   Spacing
+   ========================================================================== */
+
+.minus-top {
+	margin-top: -100px;
+}
+
+@media (max-width: 641px) {
+	.minus-top {
+		margin-top: 0;
+	}
+}
+
+.top-small {
+	padding-top: 20px;
+}
+
+
+/* ==========================================================================
+   Wrappers
+   ========================================================================== */
+
+.mw-900 {
+	max-width: 900px;
+}
+
+.mw-1000 {
+	max-width: 1000px;
+}
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1 {
+	font-family: 'Yeseva One', serif;
+	font-size: 4.8rem;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: -5px;
+}
+
+
+h3 {
+	font-family: 'Yeseva One', serif;
+	font-size: 1.8rem;
+	color: rgba(255,255,255,.5);
+	text-transform: uppercase;
+}
+
+h3.line {
+	color: rgba(255,255,255,1);
+	position: relative;
+	display: inline-block;
+}
+
+h3.line>span {
+	position: absolute;
+	width: 100%;
+	border-top: 4px solid #FF475E;
+	left: 0;
+	top: 40%;
+}
+
+h3>a {
+	color: inherit;
+}
+
+h3>a:hover {
+	color: #fff;
+   transition: all .3s ease 0s;		
+}
+
+h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+	color: #B4B4B5;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	font-weight: 700;	
+}
+
+p {
+	font-family: 'Cutive Mono', serif;
+	font-size: 1.4rem;
+	color: #fff;
+	text-align: justify;
+	max-width: 460px;
+	line-height: 2.6rem;	
+}
+
+a, a:hover {
+	text-decoration: inherit;
+}
+
+.scroll>p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	font-weight: 700;
+	position: absolute;
+	right: 20px;
+	top: 80%;
+	margin-top: -50px;
+	height: 100px;
+	z-index: 999;	
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);		
+}
+
+.arrow {
+	position: absolute;
+	right: 40px;
+	top: 75%;
+	margin-top: -50px;
+	height: 200px;
+	z-index: 999;		
+}
+
+
+.line-bottom {
+	display: block;
+	margin-top: 20px;
+	height: 3px;
+	width: 60px;
+	background: #A3882B;	
+}
+
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn-red {
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+	color: #B4B4B5;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 6px;
+	font-weight: 700;
+    background: transparent;
+    padding: 15px 40px 15px 40px;
+    border: solid #FF475E 2px;
+    text-decoration: none;
+    transition: all .3s ease 0s;
+}
+
+.btn-red:hover {
+    background: #FF475E;
+    text-decoration: none;
+    color: #fff;
+}
+.right {
+	text-align: right;
+}
+
+
+
+
